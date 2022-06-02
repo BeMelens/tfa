@@ -2,3 +2,104 @@
 @use 'utils/variables';
 @use 'components/type';
 
+body{
+    background-color: #FCFCFC;
+}
+
+.hdr{
+    margin: 0 auto;
+    padding: 47px;
+    display: flex;
+    align-items: center;
+    border-bottom: 2px solid #1D1D1D;
+
+    @media (min-width: 1000px){
+        padding: 47px 140px;
+        max-width: 1640px;
+    }
+}
+
+.logo{
+    overflow: hidden;
+    position: relative;
+    display: inline-block;
+    top: 4px;
+    margin-right: auto;
+
+    &__txt{
+        white-space: nowrap;
+        text-indent: 100%;
+        position: absolute;
+        width: 100%;
+    }
+
+    &__img{
+        height: 42px
+    }
+}
+
+.nav{
+
+    &__list{
+        display: flex;
+    }
+
+    &__el{
+        text-transform: lowercase;
+        margin-left: 40px;
+
+        &--active{
+            text-decoration: line-through;
+
+            & a:hover{
+                text-decoration: line-through;
+            }
+        }
+    }
+}
+
+.bg_menu{
+    
+    @media (min-width: 640px){
+        display: none;
+    }
+}
+
+.ftr{
+    margin: 0 auto;
+    padding: 47px;
+    border-top: 2px solid #1D1D1D;
+
+    &__copyright{
+        font-size: 17px;
+        text-transform: lowercase;
+    }
+
+    @media (min-width: 1000px){
+        padding: 47px 140px;
+        max-width: 1640px;
+    }
+}
+
+.logo_dwt{
+    overflow: hidden;
+    position: relative;
+    display: inline-block;
+    top:10px;
+
+    &__txt{
+        white-space: nowrap;
+        text-indent: 100%;
+        width: 100%;
+        position: absolute;
+    }
+
+    &__img{
+        fill: #1D1D1D;
+    }
+}
+
+::selection{
+    color: #FCFCFC;
+    background-color: #1D1D1D;
+}
