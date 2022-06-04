@@ -1,23 +1,53 @@
 body{
     font-family: 'Space Grotesk', sans-serif;
     font-weight: 400;
-    font-size: 20px;
-    line-height: 1.3;
+    font-size: 18px;
+    line-height: 1.4;
     color: #1D1D1D;
+
+    @media (min-width: 1300px){
+        font-size: 20px;
+        line-height: 1.3;
+    }
 }
 
 .title{
-    font-size: 63px;
+    font-size: 35px;
     font-size: 700;
     text-transform: lowercase;
 
+    @media (min-width: 1300px){
+        font-size: 63px;
+    }
+
     &--small{
-        font-size: 35px;
+        font-size: 27px;
+
+        @media (min-width: 1300px){
+            font-size: 35px;
+        }
     }
 
     &--big{
-        font-size: 84px;
+        font-size: 55px;
         text-transform: uppercase;
+        
+        @media (min-width: 1300px){
+            font-size: 84px;
+        }
+    }
+
+    &--margin{
+        margin-top: 47px;
+
+        @media (min-width: 1300px){
+            margin-top: 63px;
+        }
+    }
+
+    &--big-margin{
+        margin-top: 72px;
+        margin-bottom: 72px;
     }
 }
 
@@ -27,5 +57,17 @@ a{
 
     &:hover{
         text-decoration: underline;
+    }
+}
+
+p{
+    margin-top: 22px;
+}
+
+h3{
+    margin-bottom: 13px;
+
+    @media (min-width: 1300px){
+        margin-bottom: 27px;
     }
 }
