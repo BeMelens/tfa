@@ -26,6 +26,7 @@ body{
     display: inline-block;
     top: 4px;
     margin-right: auto;
+    z-index: 2;
 
     &__txt{
         white-space: nowrap;
@@ -41,17 +42,48 @@ body{
 
 .nav{
 
+    display: none;
+
+    &--open{
+
+        @media (max-width: 1299px){
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 351px;
+            background-color: #FCFCFC;
+            border-bottom: 2px solid #1D1D1D;
+            z-index: 1;
+        }
+    }
+
+    @media (min-width: 1300px){
+        display: block;
+    }
+
     &__list{
-        display: none;
+        display: flex;
+        flex-direction: column;
+        margin-top: 97px;
 
         @media (min-width: 1300px){
-            display: flex;
-        }    
+            flex-direction: row;
+            margin-top: 0px;
+        }
     }
 
     &__el{
         text-transform: lowercase;
-        margin-left: 40px;
+        margin-top: 40px;
+        text-align: center;
+
+        @media (min-width: 1300px){
+            margin-left: 40px;
+            margin-top: 0;
+            text-align: left;
+        }
 
         &--active{
             text-decoration: line-through;
@@ -64,9 +96,21 @@ body{
 }
 
 .bg_menu{
+
+    position: absolute;
+    right: 35px;
+    background-color: unset;
+    border: none;
+    z-index: 2;
     
     @media (min-width: 1300px){
         display: none;
+    }
+
+    &__txt{
+        font-family: 'Space Grotesk', sans-serif;
+        font-weight: 500;
+        font-size: 18px;
     }
 }
 
@@ -186,6 +230,10 @@ body{
 
     &--none{
         display: none;
+
+        @media (min-width: 1300px){
+            display: block;
+        }
     }
 
     &__img{

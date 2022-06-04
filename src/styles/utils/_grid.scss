@@ -78,6 +78,10 @@
         grid-column-end: -5;
     }
 
+    .dgrid-start-1{
+        grid-column-start: 1;
+    }
+
     .dgrid-start-2{
         grid-column-start: 2;
     }
@@ -96,6 +100,14 @@
 
     .dgrid-start-7{
         grid-column-start: 7;
+    }
+
+    .dgrid-start-8{
+        grid-column-start: 8;
+    }
+
+    .dgrid-start-9{
+        grid-column-start: 9;
     }
 
     .dgrid-end-1{
@@ -124,5 +136,17 @@
 
     .dgrid-end-7{
         grid-column-end: -7;
+    }
+
+    .dgrid-end-8{
+        grid-column-end: -8;
+    }
+
+    .dgrid-end-9{
+        grid-column-end: -9;
+    }
+
+    .dgrid-order{
+       order: 1;
     }
 }
