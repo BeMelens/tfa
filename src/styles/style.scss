@@ -111,6 +111,7 @@ body{
         font-family: 'Space Grotesk', sans-serif;
         font-weight: 500;
         font-size: 18px;
+        text-transform: lowercase;
     }
 }
 
@@ -219,6 +220,17 @@ body{
                 margin-top: 308px;
             }
         }
+
+        &--margin{
+
+            @media (min-width: 640px){
+                margin-top: 97px;
+            }
+            
+            @media (min-width: 1300px){
+                margin-top: 118px;
+            }
+        }
     }
 }
 
@@ -310,4 +322,33 @@ body{
 ::selection{
     color: #FCFCFC;
     background-color: #1D1D1D;
+}
+
+//UI-KIT
+.uikit-color--ptb{
+    color: #EF4135;
+}
+
+.uikit-color--ps{
+    color: #FF0000;
+}
+
+.uikit-color--ecolo{
+    color: #5AAD39;
+}
+
+.uikit-color--le{
+    color: #00E6D2;
+}
+
+.uikit-color--defi{
+    color: #DD0C7A;
+}
+
+.uikit-color--mr{
+    color: #00A4E6;
+}
+
+.uikit-link--hover{
+    text-decoration: underline;
 }
